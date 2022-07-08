@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vitorverasm/typescript-algorithms/issues"
   },
-  "homepage": "https://github.com/vitorverasm/typescript-algorithms#readme"
+  "homepage": "https://github.com/vitorverasm/typescript-algorithms#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
