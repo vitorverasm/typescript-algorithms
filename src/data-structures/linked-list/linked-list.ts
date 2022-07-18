@@ -1,6 +1,8 @@
 export type ListNode = {
   data: any;
   next: ListNode | null;
+
+  addNext(nextNode: ListNode | null): void;
 };
 
 export class LinkedListNode implements ListNode {
@@ -10,6 +12,10 @@ export class LinkedListNode implements ListNode {
   constructor(data: any, next: ListNode | null = null) {
     this.data = data;
     this.next = next;
+  }
+
+  addNext(nextNode: ListNode | null): void {
+    this.next = nextNode;
   }
 }
 

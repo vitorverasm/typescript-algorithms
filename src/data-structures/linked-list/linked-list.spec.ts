@@ -1,11 +1,11 @@
-import { LinkedList, LinkedListNode, ListNode } from "./linked-list";
+import { LinkedList, LinkedListNode } from "./linked-list";
 
 describe("Linked List", () => {
   test("Should return correct head", () => {
     const node1 = new LinkedListNode(5);
     const node2 = new LinkedListNode(20);
 
-    node1.next = node2;
+    node1.addNext(node2);
 
     const list = new LinkedList(node1);
 
@@ -16,7 +16,7 @@ describe("Linked List", () => {
     const node1 = new LinkedListNode(5);
     const node2 = new LinkedListNode(20);
 
-    node1.next = node2;
+    node1.addNext(node2);
 
     const list = new LinkedList(node1);
 
